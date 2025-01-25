@@ -1,0 +1,376 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Ensure vertical scroll is always visible */
+    overflow-x: scroll; /* Ensure horizontal scroll is always visible */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    margin: 0;
+}
+
+header + .slideshow-container {
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title {
+    text-align: left;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.title-icon {
+    margin-right: 20px;
+    height: auto;
+    width: auto;
+    max-height: 100px;
+}
+
+nav {
+    position: absolute;
+    justify-content: flex-start;
+    top: 27%;
+    right: 9%; /* Adjusted to move further towards center */
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+nav ul li {
+    position: relative;
+    margin-left: 15px; /* Increased space between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 25px 40px; /* Adjust padding to change the size of the navigation links */
+    font-size: 16px; /* Adjust font size to change the text size */
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: yellow;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+.apply-now-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.apply-now-container .button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.apply-now-container .button:hover {
+    background-color: #555;
+}
+
+/* Dropdown menu styles */
+nav ul li .submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 120%; /* Adjusted to add space between main link and dropdown */
+    left: 0;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    display: flex; /* Use flexbox to align submenu items horizontally */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth show/hide effect */
+}
+
+nav ul li .submenu a {
+    display: inline-block; /* Ensures horizontal alignment */
+    margin-right: 10px; /* Space between submenu items */
+    padding: 10px 15px; /* Increased padding for submenu items */
+    font-size: 1.1em; /* Increased font size for submenu items */
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li .submenu a:hover {
+    background-color: #555;
+    color: yellow;
+}
+
+/* Ensure submenu appears on hover */
+nav ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Fixed height for the slideshow */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    margin: auto;
+}
+
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+/* Active slide */
+.mySlides.active {
+    opacity: 1; /* Fully visible */
+}
+
+/* Transition slide */
+.mySlides.fade {
+    opacity: 0; /* Invisible */
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Contact page styles */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.footer-content h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer-content img {
+    margin-bottom: 20px;
+}
+
+.footer-content .learn-more-btn {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-content .learn-more-btn:hover {
+    background-color: #555;
+    color: yellow;
+}
+
+.contact-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-info h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info .contact-item img {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.contact-info .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-info .social-icons img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Initiatives Section */
+.initiatives {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.initiatives h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.initiative-container {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    flex-wrap: wrap;
+}
+
+.initiative {
+    text-align: center;
+    cursor: pointer; /* Add this line to change cursor on hover */
+}
+
+.initiative img {
+    width: 269px; /* Adjust width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.initiative-title {
+    background-color: #333; /* Same color as footer section */
+    color: white;
+    padding: 10px 0;
+    width: 269px; /* Match width to image */
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px; /* Optional: Rounded corners at the bottom */
+}
+
+.initiative h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+/* Even footer styles */
+.even-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.even-footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
