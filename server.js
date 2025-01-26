@@ -9,7 +9,7 @@ const app = express();
 const port = 3000;
 
 // Set the path to your static directories
-const htmlPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
+const htmlPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project/confirmation.html';
 const cssPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
 const jsPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
 const imagesPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
