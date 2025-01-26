@@ -1,23 +1,13 @@
+
 const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const path = require('path');
-
+const http = require('http')
 const app = express();
 const port = 3000;
-
-// Set the path to your static directories
-const htmlPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project/confirmation.html';
-const cssPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
-const jsPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
-const imagesPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
-
-// Serve static files from each directory
-app.use('/css', express.static(cssPath));
-app.use('/js', express.static(jsPath)); 
-app.use('/images', express.static(imagesPath));
 
 // Middleware
 app.use(cors());
@@ -28,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', // Replace with your MySQL username
-    password: '12345abhinav', // Replace with your MySQL password
+    password: 'root123', // Replace with your MySQL password
     database: 'OFFICIAL_DATABASE'
 });
 
@@ -73,10 +63,12 @@ app.post('/submit-form', (req, res) => {
                 return res.status(500).send('Error in sending confirmation email.');
             }
             console.log('Confirmation email sent: ' + info.response);
-            res.sendFile(path.join(htmlPath));
-            res.sendFile(path.join(imagesPath, 'ICO.ico'));
+            res.redirect('https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project/confirmation.html');
+            
         });
+        
     });
+
 });
 
 // Start Server
