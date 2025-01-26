@@ -73,7 +73,7 @@ app.post('/submit-form', (req, res) => {
                 return res.status(500).send('Error in sending confirmation email.');
             }
             console.log('Confirmation email sent: ' + info.response);
-            res.sendFile(path.join(htmlPath, 'confirmation.html'));
+            res.sendFile(path.join(htmlPath, 'E-CELL-website-full-stack-web-development-project\confirmation.html'));
             res.sendFile(path.join(imagesPath, 'ICO.ico'));
         });
     });
