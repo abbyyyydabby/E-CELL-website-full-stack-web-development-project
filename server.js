@@ -9,10 +9,10 @@ const app = express();
 const port = 3000;
 
 // Set the path to your static directories
-const htmlPath = 'E-CELL-website-full-stack-web-development-project';
-const cssPath = 'E-CELL-website-full-stack-web-development-project';
-const jsPath = 'E-CELL-website-full-stack-web-development-project';
-const imagesPath = 'E-CELL-website-full-stack-web-development-project';
+const htmlPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
+const cssPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
+const jsPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
+const imagesPath = 'https://abbyyyydabby.github.io/E-CELL-website-full-stack-web-development-project';
 
 // Serve static files from each directory
 app.use('/css', express.static(cssPath));
