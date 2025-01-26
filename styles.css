@@ -277,7 +277,7 @@ button:hover {
 
 
 .intro-banner {
-    background-image: url('file:///F:/WORK/CSE_AND_IT_WORK/CSE_IT/WEB_DEVELOPMENT/PROJECT/ENTREPRENEURSHIP_WEBSITE/FRONTEND/IMAGES/banner_background.jpg'); /* Replace with your actual image file name */
+    background-image: url('banner_background.jpg'); /* Replace with your actual image file name */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
