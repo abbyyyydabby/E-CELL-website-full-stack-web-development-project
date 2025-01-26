@@ -16,10 +16,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // MySQL Connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root', // Replace with your MySQL username
-    password: 'root123', // Replace with your MySQL password
-    database: 'OFFICIAL_DATABASE'
+    host: '*****',
+    user: '******', // Replace with your MySQL username
+    password: '*******', // Replace with your MySQL password
+    database: '***********'
 });
 
 db.connect((err) => {
@@ -31,7 +31,7 @@ db.connect((err) => {
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'www.alphastriker123@gmail.com', // Replace with your Gmail address
+        user: '***********@gmail.com', // Replace with your Gmail address
         pass: 'dbkg acps tkpv yqim'     // Replace with your App Password or Gmail password
     },
     tls: {
@@ -51,7 +51,7 @@ app.post('/submit-form', (req, res) => {
         
         // Send confirmation email
         const mailOptions = {
-            from: 'www.alphastriker123@gmail.com',
+            from: '************@gmail.com',
             to: `${email}`, // Use template literal to insert the email
             subject: 'Confirmation of Registration',
             text: `Dear ${name},\n\nThank you for registering with the GTBIT Entrepreneurship Society. We have received your application and will get back to you soon.\n\nBest regards,\nGTBIT Entrepreneurship Society`
