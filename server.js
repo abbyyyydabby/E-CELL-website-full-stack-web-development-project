@@ -9,10 +9,10 @@ const app = express();
 const port = 3000;
 
 // Set the path to your static directories
-const htmlPath = 'F:/WORK/CSE_AND_IT_WORK/CSE_IT/WEB_DEVELOPMENT/PROJECT/ENTREPRENEURSHIP_WEBSITE/FRONTEND/HTML';
-const cssPath = 'F:/WORK/CSE_AND_IT_WORK/CSE_IT/WEB_DEVELOPMENT/PROJECT/ENTREPRENEURSHIP_WEBSITE/FRONTEND/CSS';
-const jsPath = 'F:/WORK/CSE_AND_IT_WORK/CSE_IT/WEB_DEVELOPMENT/PROJECT/ENTREPRENEURSHIP_WEBSITE/FRONTEND/JAVASCRIPT';
-const imagesPath = 'F:/WORK/CSE_AND_IT_WORK/CSE_IT/WEB_DEVELOPMENT/PROJECT/ENTREPRENEURSHIP_WEBSITE/FRONTEND/IMAGES';
+const htmlPath = 'E-CELL-website-full-stack-web-development-project';
+const cssPath = 'E-CELL-website-full-stack-web-development-project';
+const jsPath = 'E-CELL-website-full-stack-web-development-project';
+const imagesPath = 'E-CELL-website-full-stack-web-development-project';
 
 // Serve static files from each directory
 app.use('/css', express.static(cssPath));
