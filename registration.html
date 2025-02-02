@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\IMAGES\ICO.ico" type="image/ico">
+    <link rel="stylesheet" href="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\CSS\styles.css">
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-gray-800 text-white p-6">
+        <div class="flex items-center space-x-6">
+            <img src="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\IMAGES\ICONAMchotamotalota.png" alt="" class="w-16 h-16">
+            <div class="text-xl font-bold">
+                <h1>GTBIT<br>Entrepreneurship<br>Cell</h1>
+            </div>
+        </div>
+        <nav class="mt-4">
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+                <li class="relative group">
+                    <a href="programs.html" class="hover:text-yellow-300">Programs</a>
+                    <div class="absolute left-0 hidden mt-2 space-y-2 bg-white shadow-md group-hover:block">
+                        <a href="workshops.html" class="block px-4 py-2 hover:bg-gray-200">Workshops</a>
+                        <a href="courses.html" class="block px-4 py-2 hover:bg-gray-200">Courses</a>
+                        <a href="abby.html" class="block px-4 py-2 hover:bg-gray-200">Projects</a>
+                    </div>
+                </li>
+                <li><a href="events.html" class="hover:text-yellow-300">Events</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mx-auto mt-12 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold text-center mb-6">Registration Form</h2>
+        <form id="registrationForm" action="http://localhost:3000/submit-form" method="POST">
+            <div class="space-y-4">
+                <div class="form-group">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="block text-gray-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="block text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="form-group">
+                    <label for="department" class="block text-gray-700">Department/Branch</label>
+                    <input type="text" id="department" name="department" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="form-group">
+                    <label for="year" class="block text-gray-700">Year</label>
+                    <input type="text" id="year" name="year" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="form-group">
+                    <label for="reason" class="block text-gray-700">Why do you want to join the entrepreneurship society?</label>
+                    <textarea id="reason" name="reason" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="experience" class="block text-gray-700">Previous Experience (if any)</label>
+                    <textarea id="experience" name="experience" class="w-full p-2 border border-gray-300 rounded"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="interest" class="block text-gray-700">Areas of Interest</label>
+                    <textarea id="interest" name="interest" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="skill" class="block text-gray-700">What skill can you bring to the entrepreneurship society?</label>
+                    <textarea id="skill" name="skill" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contribution" class="block text-gray-700">How do you plan to contribute to E-Cell?</label>
+                    <textarea id="contribution" name="contribution" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="commitment" class="block text-gray-700">How much time can you commit to society activities?</label>
+                    <textarea id="commitment" name="commitment" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="leadership" class="block text-gray-700">Are you willing to take on leadership roles?</label>
+                    <select id="leadership" name="leadership" class="w-full p-2 border border-gray-300 rounded" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="otherClubs" class="block text-gray-700">Are you part of any other club or society?</label>
+                    <textarea id="otherClubs" name="otherClubs" class="w-full p-2 border border-gray-300 rounded"></textarea>
+                </div>
+                <div class="form-group flex items-center space-x-2">
+                    <input type="checkbox" id="declaration" name="declaration" class="form-checkbox" value="1" required>
+                    <label for="declaration" class="text-gray-700">I declare that the information provided is accurate and true to the best of my knowledge</label>
+                </div>
+                <div class="form-group mt-4">
+                    <input type="submit" value="Submit" class="w-full py-3 bg-blue-500 text-white font-bold rounded-lg cursor-pointer hover:bg-blue-600">
+                </div>
+            </div>
+        </form>
+    </div>
+
+   <!-- Footer -->
+   <footer class="bg-gray-800 text-gray-200 py-10">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div>
+            <h3 class="font-bold text-lg">About Us</h3>
+            <p class="text-sm">Vision: To foster a culture of entrepreneurship and innovation within our college community.</p>
+        </div>
+        <div>
+            <h3 class="font-bold text-lg">Contact Info</h3>
+            <p class="text-sm"><strong>Location:</strong> GTBIT Delhi, Rajouri Garden</p>
+            <p class="text-sm"><strong>Phone:</strong> +91-01145599900</p>
+            <p class="text-sm"><strong>Email:</strong> contactus@gtbit.ac.in</p>
+        </div>
+        <div>
+            <h3 class="font-bold text-lg">Follow Us</h3>
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/ecell.gtbit/?hl=en" target="_blank">
+                    <img src="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\IMAGES\instagram.png" alt="Instagram Icon">
+                <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=Afd4EdNukuD4J1dksL56V56qToeWXpmzAU8iaW3aTlcle-9GqWGUC020lRKt0Z3hu7gklSKdceh6jxj2cO9kZehQlVcK9U0TcfiBqgX-ZvV_ww&smuh=29740&lh=Ac9FUnXuneYXFjv68jg" target="_blank">
+                    <img src="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\IMAGES\facebook.png" alt="facebook Icon">
+                <a href="https://twitter.com/i/flow/signup?lang=en" target="_blank">
+                    <img src="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\IMAGES\twitter.png" alt="twitter Icon">
+                <a href="https://www.linkedin.com/in/e-cell-gtbit-2aa456274/?originalSubdomain=in" target="_blank">
+                    <img src="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\IMAGES\linkedin.png" alt="linkedin Icon">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <div class="bg-gray-800 text-white p-4 text-center">
+        <p>Site developed by Abhinav Sagar using Template(© 2024) by Custom</p>
+    </div>
+
+    <script src="F:\WORK\CSE_AND_IT_WORK\CSE_IT\WEB_DEVELOPMENT\PROJECT\ENTREPRENEURSHIP_WEBSITE\FRONTEND\JS\validateForm.js"></script>
+</body>
+</html>
