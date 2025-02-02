@@ -46,42 +46,7 @@ header + .slideshow-container {
     max-height: 100px;
 }
 
-nav {
-    position: absolute;
-    justify-content: flex-start;
-    top: 27%;
-    right: 9%; /* Adjusted to move further towards center */
-    z-index: 10;
-}
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-
-nav ul li {
-    position: relative;
-    margin-left: 15px; /* Increased space between items */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 25px 40px; /* Adjust padding to change the size of the navigation links */
-    font-size: 16px; /* Adjust font size to change the text size */
-    background-color: yellow;
-    color: black;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-    color: yellow;
-}
 
 /* Content styles */
 .content {
@@ -124,14 +89,7 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
-.form-container {
-    width: 80%; /* Increased width */
-    max-width: 800px; /* Maximum width to maintain responsiveness */
-    background-colour: lightblue;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+
 
 h2 {
     text-align: center;
@@ -169,65 +127,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-.form-container {
-    width: 50%;
-    margin: auto;
-    background-color: whitesmoke;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
 
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input, .form-group textarea, .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form-group input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.form-group input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-.button {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
-    background-size: 400%;
-    color: white;
-    display: inline-block;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    animation: rainbow 3s linear infinite;
-}
 
 @keyframes rainbow {
     0% {
@@ -276,68 +176,6 @@ button:hover {
 }
 
 
-.intro-banner {
-    background-image: url('banner_background.jpg'); /* Replace with your actual image file name */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    color: black;
-    text-align: center;
-}
-
-.banner-content h1 {
-    font-size: 8em;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.banner-content p {
-    font-size: 4em;
-    font-weight: normal;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-
-
-/* Dropdown menu styles */
-nav ul li .submenu {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 120%; /* Adjusted to add space between main link and dropdown */
-    left: 0;
-    background-color: yellow;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    white-space: nowrap;
-    display: flex; /* Use flexbox to align submenu items horizontally */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth show/hide effect */
-}
-
-nav ul li .submenu a {
-    display: inline-block; /* Ensures horizontal alignment */
-    margin-right: 10px; /* Space between submenu items */
-    padding: 10px 15px; /* Increased padding for submenu items */
-    font-size: 1.1em; /* Increased font size for submenu items */
-    color: black;
-    text-decoration: none;
-}
-
-nav ul li .submenu a:hover {
-    background-color: #555;
-    color: yellow;
-}
-
-/* Ensure submenu appears on hover */
-nav ul li:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-}
-
 /* Slideshow styles */
 .slideshow-container {
     position: relative;
@@ -372,77 +210,6 @@ nav ul li:hover .submenu {
     object-fit: cover;
 }
 
-/* About Us Styling */
-.about-heading {
-    display: inline-block;
-    border: 3px solid #333; /* Dark grey border */
-    background-color: #FFD700; /* Yellow background */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-
-.about-heading {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-#about {
-    background-color: white; /* Light background for the section */
-    padding: 40px 20px; /* Top/Bottom padding of 40px, left/right padding of 20px */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.section-title {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-    text-align: center; /* Center-aligns text */
-}
-
-.intro-text {
-    font-size: 1.5em; /* Slightly smaller than heading */
-    color: #666; /* Medium text color */
-    margin-bottom: 20px; /* Space below intro */
-    text-align: center; /* Center-aligns text */
-}
-
-#about p, #about ul {
-    font-size: 1em; /* Normal text size */
-    color: #444; /* Medium-dark text color */
-    line-height: 1.6; /* Improved line spacing */
-    margin-bottom: 20px; /* Space below content */
-}
-
-#about ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
-}
-
-#about li {
-    font-size: 1em; /* Normal text size */
-    color: #555; /* Medium-dark text color */
-    margin-bottom: 10px; /* Space below list items */
-}
-
-@media (max-width: 768px) {
-    .about-heading {
-        padding: 20px; /* Adjust padding for smaller screens */
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
-
-    #about {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-}
 
 /* Contact page styles */
 
@@ -618,99 +385,6 @@ footer {
     background-color: #555;
 }
 
-/* Workshops Section */
-.workshops-heading {
-    display: inline-block;
-    border: 3px solid #333; /* Dark grey border */
-    background-color: #FFD700; /* Yellow background */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-.workshops-content {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-}
-
-.workshops {
-    background-color: lightblue; /* Light grey background */
-    padding: 40px 20px; /* Top/Bottom padding of 40px, left/right padding of 20px */
-    text-align: center; /* Center-aligns text */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-right: 10px
-}
-
-.workshops-heading {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-.workshops-intro {
-    font-size: 1.5em; /* Slightly smaller than heading */
-    color: #666; /* Medium text color */
-    margin-bottom: 20px; /* Space below intro */
-}
-
-.workshops-content {
-    font-size: 1em; /* Normal text size */
-    color: #444; /* Medium-dark text color */
-    line-height: 1.6; /* Improved line spacing */
-    margin-bottom: 20px; /* Space below content */
-    margin-left;: 10px
-}
-
-.workshops-pillar {
-    background-color: #fff; /* White background for the pillars section */
-    border: 1px solid #ddd; /* Light border */
-    padding: 20px; /* Padding inside the section */
-    border-radius: 8px; /* Rounded corners */
-    margin: 20px 0; /* Space above and below section */
-    margin-left: 10px
-}
-
-.workshops-pillar h2 {
-    font-size: 2em; /* Heading size */
-    color: #333; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-.workshops-pillar ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
-}
-
-.workshops-pillar li {
-    font-size: 1em; /* Normal text size */
-    color: #555; /* Medium-dark text color */
-    margin-bottom: 10px; /* Space below list items */
-}
-
-.workshops-vision {
-    font-size: 1em; /* Normal text size */
-    color: #444; /* Medium-dark text color */
-    margin-bottom: 20px; /* Space below content */
-}
-
-.workshops-call-to-action {
-    font-size: 1.2em; /* Slightly larger text for emphasis */
-    color: #333; /* Dark text color */
-}
-
-@media (max-width: 768px) {
-    .workshops {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-}
-
 /* events Section */
 .events-heading {
     display: inline-block;
@@ -783,34 +457,7 @@ footer {
     }
 }
 
-/* programs Section */
-.programs-heading {
-    display: inline-block;
-    border: 3px solid #333; /* Dark grey border */
-    background-color: #FFD700; /* Yellow background */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
 
-
-.programs-heading {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-#programs {
-    background-color: white; /* Light background for the section */
-    padding: 40px 20px; /* Top/Bottom padding of 40px, left/right padding of 20px */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
 
 .section-title {
     font-size: 2.5em; /* Large heading */
@@ -826,178 +473,7 @@ footer {
     text-align: center; /* Center-aligns text */
 }
 
-#programs p, #programs ul {
-    font-size: 1em; /* Normal text size */
-    color: #444; /* Medium-dark text color */
-    line-height: 1.6; /* Improved line spacing */
-    margin-bottom: 20px; /* Space below content */
-}
 
-#programs ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
-}
-
-#programs li {
-    font-size: 1em; /* Normal text size */
-    color: #555; /* Medium-dark text color */
-    margin-bottom: 10px; /* Space below list items */
-}
-
-@media (max-width: 768px) {
-    .programs-heading {
-        padding: 20px; /* Adjust padding for smaller screens */
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
-
-    #programs {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-}
-
-/* courses Section */
-.courses-heading {
-    display: inline-block;
-    border: 3px solid #333; /* Dark grey border */
-    background-color: #FFD700; /* Yellow background */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-
-.courses-heading {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-#courses {
-    background-color: #f9f9f9; /* Light background for the section */
-    padding: 40px 20px; /* Top/Bottom padding of 40px, left/right padding of 20px */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.section-title {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-    text-align: center; /* Center-aligns text */
-}
-
-.intro-text {
-    font-size: 1.5em; /* Slightly smaller than heading */
-    color: #666; /* Medium text color */
-    margin-bottom: 20px; /* Space below intro */
-    text-align: center; /* Center-aligns text */
-}
-
-#courses p, #courses ul {
-    font-size: 1em; /* Normal text size */
-    color: #444; /* Medium-dark text color */
-    line-height: 1.6; /* Improved line spacing */
-    margin-bottom: 20px; /* Space below content */
-}
-
-#courses ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
-}
-
-#courses li {
-    font-size: 1em; /* Normal text size */
-    color: #555; /* Medium-dark text color */
-    margin-bottom: 10px; /* Space below list items */
-}
-
-@media (max-width: 768px) {
-    .courses-heading {
-        padding: 20px; /* Adjust padding for smaller screens */
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
-
-    #courses {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-}
-
- /* projects Section */
-.projects-heading {
-    display: inline-block;
-    border: 3px solid #333; /* Dark grey border */
-    background-color: #FFD700; /* Yellow background */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-}
-
-
-.projects-heading {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-#projects {
-    background-color: white; /* Light background for the section */
-    padding: 40px 20px; /* Top/Bottom padding of 40px, left/right padding of 20px */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.section-title {
-    font-size: 2.5em; /* Large heading */
-    color: black; /* Dark text color */
-    margin-bottom: 10px; /* Space below heading */
-    text-align: center; /* Center-aligns text */
-}
-
-.intro-text {
-    font-size: 1.5em; /* Slightly smaller than heading */
-    color: #666; /* Medium text color */
-    margin-bottom: 20px; /* Space below intro */
-    text-align: center; /* Center-aligns text */
-}
-
-#projects p, #projects ul {
-    font-size: 1em; /* Normal text size */
-    color: #444; /* Medium-dark text color */
-    line-height: 1.6; /* Improved line spacing */
-    margin-bottom: 20px; /* Space below content */
-}
-
-#projects ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
-}
-
-#projects li {
-    font-size: 1em; /* Normal text size */
-    color: #555; /* Medium-dark text color */
-    margin-bottom: 10px; /* Space below list items */
-}
-
-@media (max-width: 768px) {
-    .projects-heading {
-        padding: 20px; /* Adjust padding for smaller screens */
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
-
-    #projects {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-}
 
 /* CSS for the scroll down button */
 #scroll-down {
